@@ -1,0 +1,250 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* Imported fonts */
+
+@font-face {
+    font-family: "ultra";
+    src: url('../fonts/serif/ultra-regular.ttf'); format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'roboto';
+    src: url('../fonts/sans-serif/robot-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'lato';
+    src: url('../fonts/sans-serif/lato-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* typography */
+
+p {
+    font-family: roboto, arial, sans-serif;
+}
+
+h1, h2, h3, h4. {
+    font-family: lato, helvetica, sans-serif;
+    letter-spacing: 0.0325;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    transform: rotate(-5deg);
+}
+
+.highlight {
+    display: inline-block;
+    font-family: ultra, Georgia, serif;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1 rem;
+    border-bottom-right-radius: 1rem;
+    color: #efedea;
+    background-color: #8B4D8C;
+}
+
+button {
+    display: inline-block;
+    font-family: ultra, Georgia, serif;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1 rem;
+    border-bottom-right-radius: 1rem;
+    color: #f5f3f1;
+    background-color: #57B6F0;
+    box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* general setup and defaults*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+nav {
+    margin-top: 3rem;
+}
+/* layout */
+header {
+    padding: 0.5rem 0rem 2rem 0rem;
+    
+}
+.main-section {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 1rem;
+}
+
+article {
+    grid-column 1 / 2;
+    grid-row: 1;
+
+}
+
+aside {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    padding-left: 1rem;
+    border-left: 1px solid black
+    
+}
+
+aside p {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #28234b
+    
+}
+.subsection {
+    display: flex;
+}
+
+/* img and figures*/
+
+img {
+    width:100%
+}
+
+figure {
+    margin: 0px;
+}
+
+.article-image {
+    width: 33%;
+    float: left;
+    margin-right: 0.75rem;
+
+}
+
+.subsection {
+    margin: 1rem 0rem;
+}
+
+.subsection figure {
+    margin: 0rem 0.25rem;
+    background-color: #EFE1C0;
+
+}
+
+.subsection figure figcaption {
+    padding: 0.5rem 0.5rem;
+}
+
+/* LINKS AND NAVIGATION*/
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    font-size: 1.25rem;
+    font-family: lato, Arial, sans-serif;
+    color: blue;
+     
+}
+
+
+
+nav {
+    border-bottom: 1px solid black ;
+    border-top: 1px solid black;
+
+}
+
+/* Link Styling */
+
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color:chartreuse;
+}
+
+a:focus {
+    color: magenta;
+}
+
+.expand {
+    font-size: 0.225rem;
+}
+
+
+
+      
+
+
+
+
+
+
