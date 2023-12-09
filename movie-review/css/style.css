@@ -1,0 +1,121 @@
+/*NOTES FOR CSS*/
+
+
+
+/**For styling the NAV section**/
+
+.navfont {
+    font-style: oblique;
+    text-align: center;
+}
+
+
+/**For the Title at top of page **/
+
+.whitetext {
+    color: white;
+}
+
+
+.pop {
+    display: inline-block;
+    font-family: ultra, Georgia, serif;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1 rem;
+    border-bottom-right-radius: 1rem;
+    color: #efedea;
+    background-color: #3547BD;
+    
+}
+
+
+/**format the back ground of the img**/
+
+.subsection {
+    margin: 1rem 0rem;
+}
+
+.subsection figure {
+    margin: 0rem 0.25rem;
+    background-color: #EFE1C0;
+
+}
+
+.subsection figure figcaption {
+    padding: 0.5rem 0.5rem;
+}
+
+
+
+
+/**THis is to format the img wrap around text**/
+
+
+.wrap {
+    float: left;
+    margin: 5px;
+    
+
+}
+
+/**color code the words for headings **/
+
+.red {
+    color: #F3241C;
+}
+
+.blue {
+    color: #3547BD;
+}
+
+.green {
+    color: #37DADD;
+}
+
+.grey {
+    color: #56585A;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+h2 {
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+  }
+
+/**format the color of the text in the body**/
+
+.bold {
+    font-weight: bold;
+}
+
+.Blacktext {
+    color: black;
+}
+/** Link stylings**/
+
+
+a:visited{
+    color: #F3241C;
+}
+
+a:hover{
+    color:#37DADD;
+}
+
+a:focus {
+    color: #3547BD;
+}
+
+.expand {
+    font-size: 0.225rem;
+}
+
+/**All things footer**/
+
+footer {
+    margin-top: auto;
+  }
